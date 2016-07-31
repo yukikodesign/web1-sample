@@ -3,7 +3,7 @@ git add --all
 git commit -m "turning in"
 pushcommit=$(git push origin gh-pages)
 if [[ $? != 0 ]]; then
-  echo -e "******** \n   Turn in failed!\n ******** "
+  echo -e "\n\n******** \n   Turn in failed!\n ******** "
 else
-  echo -e " ----- \n Successfully Turned in!\n ------ "
+  echo -e "\n\n ----- \n Successfully Turned in!\n ------ "
 fi
