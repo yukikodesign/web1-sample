@@ -3,7 +3,7 @@ git commit -m "turning in"
 pushcommit=$(git push origin gh-pages)
 if [[ $? != 0 ]]; then
   echo "turn in failed"
-else if [[ pushcommit ]]; then
+elif [[ pushcommit ]]; then
   echo pushcommit
   echo " ----- Successfully Turned in! ------ "
 fi
