@@ -1,9 +1,9 @@
 git add --all
 git commit -m "turning in"
 pushcommit=$(git push origin gh-pages)
-if [[ $? != 0 ]] then
+if [[ $? != 0 ]]; then
   echo "turn in failed"
-else if [[ pushcommit ]]
+else if [[ pushcommit ]]; then
   echo pushcommit
   echo " ----- Successfully Turned in! ------ "
 fi
