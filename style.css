@@ -1,18 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Cormorant:300|Roboto:300,400,400i,700';
+
 body {
   font-family: roboto, arial, sans-serif;
+  font-weight: 400;
   background-color: #f1f1f1;
   color: #333;
-  margin: 0;
-  font-weight: 400;
 }
-/** {*/
-/*  box-sizing: border-box;*/
-/*  overflow: auto;*/
-/*}*/
-/*a, a:link, a:visited {*/
-/*  color: #333;*/
-/*}*/
+
 .container {
   margin: 0 auto;
   width: 960px;
@@ -30,10 +24,11 @@ body {
   text-align: right;
 }
 .nav-link {
+  box-sizing: border-box;
   color: #fff;
   text-decoration: none;
   height: 40px;
-  line-height: 36px;
+  line-height: 38px;
   font-size: 20px;
   font-family: Cormorant, cursive;
   display: inline-block;
@@ -41,7 +36,6 @@ body {
   padding: 0 15px;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0);
-  overflow: hidden;
   transition: all 0.2s ease;
 }
 .nav-link:hover {
@@ -70,12 +64,28 @@ body {
 }
 
 
-
+/*  for footer */
+html, body {
+  margin: 0;
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 200px;
+  position: relative;
+  overflow: auto;
+}
 footer {
   background-color: #333;
   color: #999;
   font-weight: 300;
   overflow: auto;
+  clear: both;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .footer-text {
   max-width: 960px;
@@ -93,9 +103,11 @@ footer {
 
 /* ------- index page ---------- */
 #home .hero {
-    background-image: url('images/mountains.jpg');
+  background-image: url('images/mountains.jpg');
+  /*@thkelley https://unsplash.com/photos/VRmxES-rIu8*/
 }
 .hero-card {
+  box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.73);
   color: #efefef;
   margin: 110px auto 60px auto;
@@ -130,10 +142,9 @@ footer {
 .main-content {
   width: 960px;
   margin: 50px auto;
-  min-height: 450px;
 }
 .card {
-  background-color: #fff; 
+  background-color: #fff;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   width: calc(33.3% - 20px);
   margin: 10px;
@@ -169,22 +180,41 @@ footer {
 /* ------- about page ---------- */
 #about .hero {
   background-image: url('images/blueberries.jpg');
+  /* photo from @veeterzy https://unsplash.com/search/blueberries?photo=Hc42xXu_WOg*/
 }
-#about .hero-card {
-  font-family: Cormorant, cursive;
-  margin: 60px auto;
+  #about .hero-card {
+    font-family: Cormorant, cursive;
+    margin: 60px auto;
+  }
+    .hero-card h1 {
+      font-size: 50px;
+      margin: 10px 0;
+    }
+    .hero-card h2 {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+  .about-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+.about-list-container {
+  border: 1px solid #ddd;
+  border-right: none;
+  border-left: 20px solid #1c5982;
+  margin-bottom: 50px;
+  padding: 0 50px;
 }
-.hero-card h1 {
-  font-size: 50px;
-  margin: 10px 0;
-}
-.hero-card h2 {
-  font-size: 30px;
-  margin: 10px 0;
-}
-.about-photo {
-  width: 220px;
-  height: 220px;
-  border-radius: 110px;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-}
+  .about-list-title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #1c5982;
+  }
+  .about-list {
+    font-size: 24px;
+  }
+  .about-list li {
+    margin: 1em auto;
+  }
