@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Cormorant:300|Roboto: 100i, 300, 400,400i,700';
+@import 'https://fonts.googleapis.com/css?family=Cormorant:300|Roboto:300,400,400i,700';
 
 body {
   font-family: roboto, arial, sans-serif;
@@ -63,47 +63,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.hero-card {
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.73);
-  color: #efefef;
-  margin: 110px auto 60px auto;
-  padding: 50px;
-  max-width: 960px;
-  text-align: center;
-  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
-}
-.hero-card-title {
-  font-family: Cormorant, cursive;
-  margin: 0;
-  font-size: 50px;
-}
-.hero-card-description {
-  font-family: Cormorant, cursive;
-  font-size: 30px;
-  font-weight: 300;
-  margin: 20px 0;
-}
 
-.hero-card-link {
-  text-decoration: none;
-  color: #efefef;
-  font-size: 18px;
-  border: 2px solid #efefef;
-  border-radius: 18px;
-  padding: 5px 20px;
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-.hero-card-link:hover {
-  color: #D69E00;
-  border-color: #D69E00;
-}
-
-.main-content {
-  width: 960px;
-  margin: 50px auto;
-}
 /*  for footer */
 html, body {
   margin: 0;
@@ -141,15 +101,48 @@ footer {
   text-decoration: underline;
 }
 
-
-
-
 /* ------- index page ---------- */
 #home .hero {
-  background-image: url('images/ocean.jpg');
-  /*photo by NASA https://hd.unsplash.com/photo-1451186859696-371d9477be93 */
+  background-image: url('images/mountains.jpg');
+  /*@thkelley https://unsplash.com/photos/VRmxES-rIu8*/
+}
+.hero-card {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.73);
+  color: #efefef;
+  margin: 110px auto 60px auto;
+  padding: 50px;
+  max-width: 960px;
+  text-align: center;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.hero-card-title {
+  font-family: Cormorant, cursive;
+  margin: 0;
+  font-size: 50px;
+}
+.hero-card-description {
+  margin: 20px 0 30px;
+}
+.hero-card-link {
+  text-decoration: none;
+  color: #efefef;
+  font-size: 18px;
+  border: 2px solid #efefef;
+  border-radius: 18px;
+  padding: 5px 20px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+.hero-card-link:hover {
+  color: #D69E00;
+  border-color: #D69E00;
 }
 
+.main-content {
+  width: 960px;
+  margin: 50px auto;
+}
 .card {
   background-color: #fff;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
@@ -167,6 +160,7 @@ footer {
 .card-image {
   height: 180px;
   width: 100%;
+  background-color: pink;
   display: block;
 }
 .card-title {
@@ -189,21 +183,29 @@ footer {
   /* photo from @veeterzy https://unsplash.com/search/blueberries?photo=Hc42xXu_WOg*/
 }
   #about .hero-card {
+    font-family: Cormorant, cursive;
     margin: 60px auto;
   }
+    .hero-card h1 {
+      font-size: 50px;
+      margin: 10px 0;
+    }
+    .hero-card h2 {
+      font-size: 30px;
+      margin: 10px 0;
+    }
   .about-photo {
     width: 200px;
     height: 200px;
     border-radius: 100px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   }
-  .hero-card h1 {
-    margin: 20px 0;
-  }
 .about-list-container {
-  border-left: 5px solid #d69e00;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-left: 20px solid #1c5982;
   margin-bottom: 50px;
-  padding: 20px 50px;
+  padding: 0 50px;
 }
   .about-list-title {
     font-size: 30px;
@@ -217,95 +219,10 @@ footer {
     margin: 1em auto;
   }
 
+
 /* ------- menu page ---------- */
-#coffee .hero {
-  background-image: url('images/coffee.jpg');
-  /* photo from Jakub Kapusnak https://foodiesfeed.com/flatwhite-coffee-closeup-berlin */
+#menu .hero {
+  background-image: url('images/blueberries.jpg');
+  /* photo from @veeterzy https://unsplash.com/search/blueberries?photo=Hc42xXu_WOg*/
 }
 
-blockquote {
-  font-size: 30px;
-  padding: 20px;
-  margin: 20px 15px;
-  border-left: 5px solid #d69e00;
-}
-cite {
-  display: block;
-  color: #666;
-  font-size: 16px;
-}
-
-
-.pricing th {
-  padding: 10px;
-}
-  .pricing .size {
-    min-width: 150px;
-    text-align: right;
-    font-size: 14px;
-  }
-  .pricing td {
-    padding: 10px 10px;
-    vertical-align: top;
-    text-align: right;
-  }
-  .pricing dd {
-    margin-left: 0;
-    color: #666;
-    font-style: italic;
-    font-size: 14px;
-  }
-  .pricing .label {
-    text-align: left;
-  }
-
-/* ------- search page ---------- */
-#search .hero {
-  background-image: url('images/sky.jpg');
-  /* Photo from drew collins https://unsplash.com/?photo=U713MZX1x0w */
-}
-
-.search-form {
-  background-color: #ffffff;
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-}
-label {
-  margin-right: 10px;
-}
-input {
-  border: 1px solid #ddd;
-  height: 30px;
-  width: 630px;
-  font-size: 14px;
-  padding: 0 10px;
-}
-button {
-  background-color: #3c8bce;
-  height: 32px;
-  margin-left: 10px;
-  padding: 0 20px;
-  border: 0;
-  color: #fff;
-  font-size: 14px;
-  border-radius: 3px;
-}
-
-#assignments .hero {
-  background-image: url('images/coast.jpg');
-  /* photo from Stefan Kunze https://unsplash.com/?photo=_SmZSuZwkHg*/
-}
-#assignments dt {
-
-  margin-top: 20px;
-}
-#assignments dt a {
-  color: #3c8bce;
-  font-size: 18px;
-}
-#assignments dt a:hover {
-  color: #115690;
-}
-#assignments dd {
-  margin-left: 0;
-}

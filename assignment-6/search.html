@@ -4,9 +4,8 @@
     <title>Web 1</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
-  <body id="about">
+  <body id="search">
     <div class="wrapper">
-
       <div class="hero">
         <nav class="main-nav">
           <a href="index.html" id="logo">Yukiko's Web I</a>
@@ -16,32 +15,30 @@
           <a href="assignments.html" class="nav-link" id="navAssignments">Assignments</a>
         </nav>
         <div class="hero-card">
-          <image class="about-photo" src="images/about-photo.jpg">
-          <h1 class="hero-card-title">About Yukiko</h1>
+          <h1 class="hero-card-title">Search and Embeddables</h1>
           <p class="hero-card-description">
-            UX Designer, Developer and Educator in the SF Bay Area
+            Forms, video, and maps
           </p>
         </div>
       </div>
       <!-- end hero -->
 
       <div class="main-content">
-        <div class="about-list-container">
-          <h2 class="about-list-title">Three things I like</h2>
-          <ol class="about-list">
-            <li>Wood Working</li>
-            <li>Star Wars and Star Trek</li>
-            <li>TV: Archer, One Punch Man, Bob's Burgers</li>
-          </ol>
-        </div>
-        <div class="about-list-container">
-          <h2 class="about-list-title">Three things I <em>don't</em> like</h2>
-          <ol class="about-list">
-            <li>Being sick</li>
-            <li>Traffic</li>
-            <li>Butterflies</li>
-          </ol>
-        </div>
+        <h1>Search using a form</h1>
+        <form class="search-form" action="https://google.com/search">
+
+          <label>Search Google</label>
+          <input id="searchString" name="q" type="text" placeholder="Search">
+          <button type="submit" value="Search">
+            Search
+          </button>
+        </form>
+
+        <h1>Embed a video</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8AKZk2ldPWs" frameborder="0" allowfullscreen></iframe>
+
+        <h1>Embed a map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1640588331015!2d-122.4015895486329!3d37.786194819175094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807d10af6e51%3A0x1122879c36e6d3aa!2s180+New+Montgomery+St%2C+San+Francisco%2C+CA+94105!5e0!3m2!1sen!2sus!4v1471211555762" width="560" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <!-- end main-content -->
 
