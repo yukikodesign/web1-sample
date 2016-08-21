@@ -154,6 +154,7 @@ footer {
   background-color: #fff;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   width: calc(33.3% - 20px);
+  min-height: 310px;
   margin: 10px;
   float: left;
   text-decoration: none;
@@ -208,7 +209,7 @@ footer {
   .about-list-title {
     font-size: 30px;
     font-weight: 400;
-    color: #1c5982;
+    color: #d69e00;
   }
   .about-list {
     font-size: 24px;
