@@ -1,7 +1,7 @@
 clear
 git add --all
 git commit -m "turning in"
-pushcommit=$(git push origin gh-pages)
+pushcommit=$(git push origin master)
 if [[ $? != 0 ]]; then
   echo -e "\n\n******** \n\n   Turn in failed!\n \n******** \n\n"
 else
