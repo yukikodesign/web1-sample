@@ -6,7 +6,7 @@ body {
   color: #333;
   margin: 0;
 }
-a, a:link{
+a, a:link, a:visited {
   text-decoration: none;
   color: #d69e00;
 }
