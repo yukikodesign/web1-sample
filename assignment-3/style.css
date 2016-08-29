@@ -21,7 +21,7 @@ a:hover {
 .main-nav {
   margin: 20px auto;
 }
-.nav-link {
+a.nav-link {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -29,7 +29,7 @@ a:hover {
   padding: 10px 15px;
   border: 2px solid rgba(255, 255, 255, 0);
 }
-.nav-link:hover {
+a.nav-link:hover {
   color: #FFD86B;
   border-color: #FFD86B;
 }
