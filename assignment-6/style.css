@@ -15,13 +15,7 @@ body {
   margin: 0 auto;
   width: 960px;
 }
-.hero {
-  background-color: #222;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  overflow: auto;
-}
+
 .main-nav {
   max-width: 960px;
   margin: 20px auto;
@@ -66,7 +60,13 @@ body {
 #logo:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
-
+.hero {
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: auto;
+}
 .hero-card {
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.73);
@@ -210,7 +210,7 @@ footer {
   /* photo from Jakub Kapusnak https://foodiesfeed.com/flatwhite-coffee-closeup-berlin */
 }
 
-blockquote {
+.coffee-quote {
   font-size: 30px;
   padding: 20px;
   margin: 20px 15px;
@@ -223,28 +223,28 @@ cite {
 }
 
 
-.pricing th {
+.menu th {
   padding: 10px;
 }
-  .pricing .size {
-    min-width: 150px;
-    text-align: right;
-    font-size: 14px;
-  }
-  .pricing td {
-    padding: 10px 10px;
-    vertical-align: top;
-    text-align: right;
-  }
-  .pricing dd {
-    margin-left: 0;
-    color: #666;
-    font-style: italic;
-    font-size: 14px;
-  }
-  .pricing .label {
-    text-align: left;
-  }
+.menu .size {
+  min-width: 150px;
+  text-align: right;
+  font-size: 14px;
+}
+.menu td {
+  padding: 10px 10px;
+  vertical-align: top;
+  text-align: right;
+}
+.menu dd {
+  margin-left: 0;
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+}
+.menu .label {
+  text-align: left;
+}
 
 /* ------- search page ---------- */
 #search .hero {
@@ -282,17 +282,16 @@ button {
   background-image: url('images/coast.jpg');
   /* photo from Stefan Kunze https://unsplash.com/?photo=_SmZSuZwkHg*/
 }
-#assignments dt {
-
+.assignment-list dt {
   margin-top: 20px;
 }
-#assignments dt a {
+.assignment-list a {
   color: #3c8bce;
   font-size: 18px;
 }
-#assignments dt a:hover {
+.assignment-list a:hover {
   color: #115690;
 }
-#assignments dd {
+.assignment-list dd {
   margin-left: 0;
 }
